@@ -1,0 +1,14 @@
+{
+  "name": "capstone-local",
+  "description": "캡스톤 R2 마켓플레이스",
+  "owner": {
+    "name": "캡스톤 교육생"
+  },
+  "plugins": [
+    {
+      "name": "my-kit",
+      "source": "./plugins/my-kit",
+      "description": "캡스톤 트랙 C: 내 agents, 오픈소스 도입 검토와 기획안 skill, 가드레일 훅"
+    }
+  ]
+}

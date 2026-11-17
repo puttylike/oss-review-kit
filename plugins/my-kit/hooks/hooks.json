@@ -1,0 +1,26 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "mcp__.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"${CLAUDE_PLUGIN_ROOT}/scripts/mcp-guard.sh\" plugin_my-kit_deepwiki",
+            "onFailure": "block"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash|WebFetch",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"${CLAUDE_PLUGIN_ROOT}/scripts/net-guard.sh\" mcp.deepwiki.com",
+            "onFailure": "block"
+          }
+        ]
+      }
+    ]
+  }
+}
